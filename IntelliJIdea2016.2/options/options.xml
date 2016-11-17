@@ -1,0 +1,71 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="log.debug.categories" value="" />
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
+    <property name="DefaultHtmlDoctype.Refreshed" value="1" />
+    <property name="installation.uid" value="bd771a4c-f357-4ce8-b422-b67690e46440" />
+    <property name="project.wizard.group" value="org.jetbrains.idea.maven.wizards.MavenModuleBuilder" />
+    <property name="project.wizard.template" value="Maven" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="MavenModuleWizard.inheritGroupId" value="true" />
+    <property name="MavenModuleWizard.inheritVersion" value="true" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="lastTip" value="55" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Dependencies" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="decompiler.legal.notice.accepted" value="true" />
+    <property name="MoveFile.OpenInEditor" value="true" />
+    <property name="FileTemplates.SelectedTemplate" value="HTML File" />
+    <property name="KEYMAP" value="next method&#10;compl&#10;comple" />
+    <property name="FileStructurePopup.narrowDown" value="true" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="GradleModuleWizard.inheritGroupId" value="true" />
+    <property name="GradleModuleWizard.inheritVersion" value="true" />
+    <property name="MoveClassWithTarget.OpenInEditor" value="false" />
+    <property name="INSPECTION_FILTER_HISTORY" value="seri&#10;Serialization&#10;serializable class without&#10;serializable class with&#10;serializa&#10;&quot;New in 13&quot;" />
+    <property name="LAST_INJECTED_LANGUAGE" value="spring-bean-name" />
+    <property name="PLUGIN_FILTER" value="CamelCase&#10;id&#10;Tab&#10;TabSwitch&#10;spring" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Downloads/application_sources/resin/resin-pro&#10;/Users/wuxinlong/shuidi/didabao-agent&#10;/Users/wuxinlong/shuidi/suishoubao_api&#10;/Users/wuxinlong/Downloads/application_sources/resin/resin-pro1&#10;/usr/local/webservers/resin-didabao-agent&#10;/Users/wuxinlong/shuidi/didabao-agent/merak-webapp/conf/resin.xml&#10;/Users/wuxinlong/shuidi/api1/shuidi&#10;/Users/wuxinlong/shuidi/api/shuidi&#10;/Users/wuxinlong/shuidi/suishoubao_api/suishoubao-webapp/conf/resin.xml&#10;/Users/wuxinlong/shuidi/suishoubao_api/suishoubao-webapp/conf/resin.properties&#10;/Users/wuxinlong/shuidi/suishoubao&#10;/Users/wuxinlong/shuidi/api&#10;/Users/wuxinlong/shuidi/shuidi-admin-task&#10;/Users/wuxinlong/shuidi/api/shuidi/shuidi-task&#10;/Users/wuxinlong/application_installed/resin&#10;/Users/wuxinlong/shuidi/shuidi-message&#10;/Users/wuxinlong/coding/notes/shuidi-task&#10;/Users/wuxinlong/coding/notes&#10;/Users/wuxinlong/shuidi/apache-tomcat-3&#10;/Users/wuxinlong/shuidi/api1/shuidi/pom.xml&#10;/Users/wuxinlong/Downloads/application_sources/webstorm/solarized-settings.jar&#10;/Users/wuxinlong/Library/Preferences/IntelliJIdea2016.2/codestyles/shuidi_code_style.xml&#10;/Users/wuxinlong/shuidi/apache-tomcat-8.0.33&#10;/Users/wuxinlong/github/mssapi_java/pom.xml&#10;/Users/wuxinlong/Desktop/tmp/api/shuidi/pom.xml&#10;/Users/wuxinlong/shuidi/api/shuidi/shuidi-app/src/test/com&#10;/Users/wuxinlong/shuidi/api/shuidi/shuidi-app/src/main/java&#10;/Users/wuxinlong/shuidi/api/shuidi/shuidi-app/src/test&#10;/Users/wuxinlong/coding/learned-optimism/pom.xml&#10;/Users/wuxinlong/coding/learned-optimism/shuidi/pom.xml" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="SpringBeansModulesPanel[0]" value="0.15197569" />
+    <property name="SpringBeanPointerFinderRecursivePanel[0]" value="0.15197569" />
+    <property name="SpringMvcModulesPanel[0]" value="0.15197569" />
+    <property name="FrameworksFinderRecursivePanel[0]" value="0.15197569" />
+    <property name="JavaeeViewModulesPanel[0]" value="0.15197569" />
+    <property name="javaee.appServer.lastUsedServer" value="Tomcat 2" />
+    <property name="javaee.appServer.lastUsedIntegration" value="Tomcat Server" />
+    <property name="test_tree_console_proprtion" value="0.2" />
+    <property name="junit_statistics_table_columnsWidth0" value="75" />
+    <property name="junit_statistics_table_columnsOrder0" value="0" />
+    <property name="junit_statistics_table_columnsWidth1" value="75" />
+    <property name="junit_statistics_table_columnsOrder1" value="1" />
+    <property name="junit_statistics_table_columnsWidth2" value="75" />
+    <property name="junit_statistics_table_columnsOrder2" value="2" />
+    <property name="junit_statistics_table_columnsWidth3" value="75" />
+    <property name="junit_statistics_table_columnsOrder3" value="3" />
+    <property name="junit_statistics_table_columnsWidth4" value="75" />
+    <property name="junit_statistics_table_columnsOrder4" value="4" />
+    <property name="junit_statistics_table_columnsWidth5" value="75" />
+    <property name="junit_statistics_table_columnsOrder5" value="5" />
+    <property name="MoveClass.OpenInEditor" value="true" />
+    <property name="fileTypeChangedCounter" value="3" />
+    <property name="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$1.splitter" value="0.3" />
+    <property name="com.intellij.openapi.editor.actions.MultiplePasteAction$1.splitter" value="0.3" />
+    <property name="SqlStructureView.SqlDdlStatement.file.structure.state" value="true" />
+    <property name="evlsprt3.162" value="12" />
+    <property name="installed.kotlin.plugin.version" value="1.0.3-release-IJ2016.1-120" />
+    <property name="android-component-compatibility-check" value="1479282799225" />
+    <property name="ideavim.statistics.timestamp" value="1479269667041" />
+    <property name="java.anonymous.provider.file.structure.state" value="true" />
+    <property name="JUnitSupport.hidePassedTests" value="false" />
+    <property name="com.intellij.database.view.ui.DeleteDialog.previewExpanded" value="true" />
+    <property name="SqlStructureView.filterD.file.structure.state" value="true" />
+    <property name="CommittedChanges.SplitterProportions.0" value="700" />
+    <property name="CommittedChanges.SplitterProportions.1" value="500" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="300" />
+    <property name="settings.code.style.selected.tab.JAVA" value="Tabs and Indents" />
+    <property name="selected.color.option.type" value="RIGHT_MARGIN_COLOR" />
+  </component>
+</application>

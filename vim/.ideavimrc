@@ -1,0 +1,559 @@
+"
+" gui settings
+if (&t_Co == 256 || has('gui_running'))
+  if ($TERM_PROGRAM == 'iTerm.app')
+    colorscheme solarized
+  else
+    " colorscheme desert
+    colorscheme solarized
+  endif
+endif
+
+" Disambiguate ,a & ,t from the Align plugin, making them fast again.
+"
+" This section is here to prevent AlignMaps from adding a bunch of mappings
+" that interfere with the very-common ,a and ,t mappings. This will get run
+" at every startup to remove the AlignMaps for the *next* vim startup.
+"
+" If you do want the AlignMaps mappings, remove this section, remove
+" ~/.vim/bundle/Align, and re-run rake in maximum-awesome.
+function! s:RemoveConflictingAlignMaps()
+  if exists("g:loaded_AlignMapsPlugin")
+    AlignMapsClean
+  endif
+endfunction
+command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
+silent! autocmd VimEnter * RemoveConflictingAlignMaps
+
+" colorscheme
+set background=dark
+colorscheme solarized
+" let g:solarized_termcolors=256
+
+" let g:molokai_original = 1
+" let g:rehash256 = 1
+
+" 检测文件类型
+filetype on
+" 针对不同的文件类型采取不同的缩进格式
+filetype indent on
+" 允许插件
+filetype plugin on
+" 启动自动补全
+filetype plugin indent on
+
+"settings fFor emmet-vim: by wuxinlong
+let g:emmet_html5=1
+let g:user_emmet_mode='a'
+let g:user_emmet_leader_key=';e'
+let g:user_emmet_install_global = 1
+let g:user_emmet_settings = {
+\   'html': {'quote_char': "'"}
+\}
+" autocmd FileType html,css,js,jsx EmmetInstall
+"react语法检查:by wuxinlong
+let g:jsx_ext_required=0 "Allow JSX in normal JS files
+" 设置错误符号
+let g:syntastic_error_symbol='✗'
+" 设置警告符号
+let g:syntastic_warning_symbol='⚠'
+" 是否在打开文件时检查
+let g:syntastic_check_on_open=0
+" 是否在保存文件后检查
+let g:syntastic_check_on_wq=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_checkers = ['jsxhint']
+" let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+
+"youcompleteme: by wuxinlong, longest,menuone,preview
+" nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>"force recomile with syntastic
+set completeopt=longest,menuone,preview
+let g:ycm_always_populate_location_list = 1
+let g:ycm_add_preview_to_completeopt = 1
+" let g:ycm_autoclose_preview_window_after_insertion = 1"当离开插入模式时，关闭预览窗口
+map <leader>c :pclose<cr>
+let g:ycm_autoclose_preview_window_after_completion=0
+let g:ycm_complete_in_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+
+" 开启 YCM 标签补全引擎
+let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_seed_identifiers_with_syntax=1" 语法关键字补全
+let g:ycm_key_list_select_completion=['<C-n>', '<Down>', '<Tab>']
+let g:ycm_key_list_previous_completion=['<C-p>', '<Up>', '<S-Tab>']
+
+" 设置在下面几种格式的文件上屏蔽ycm
+" let g:ycm_filetype_blacklist = {
+"       \ 'tagbar' : 1,
+"       \ 'nerdtree' : 1,
+"       \}
+
+nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR>
+" 只能是 #include 或已打开的文件
+nnoremap <leader>je :YcmCompleter GoToDefinition<CR>
+
+"UltiSnips
+set runtimepath+=~/.vim/my-snippets
+let g:UltiSnipsExpandTrigger="<leader><Tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+" 跳至下个 tab stop
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "my-snippets"]
+
+function! MyTabFunction()
+    let line = getline('.')
+    let substr = strpart(line, -1, col('.')+1)
+    let substr = matchstr(substr, "[^ \t]*$")
+    if strlen(substr) == 0
+        return "\<tab>"
+    endif
+    return pumvisible() ? "\<c-n>" : "\<c-x>\<c-o>"
+endfunction
+inoremap <tab> <c-r>=MyTabFunction()<cr>
+" <c-o>功能强大，故这里不再做映射
+" inoremap <c-o> <c-x><c-o>
+
+
+" " 修改leader键
+" let mapleader = ','
+" let g:mapleader = ','
+
+" " 开启语法高亮
+" syntax enable
+" " 允许用指定语法高亮配色方案替代默认方案
+" syntax on
+
+"set guifont=Monaco:h20          " 字体 && 字号
+set history=2000
+" 配置文件修改之后自动载入
+set autoread
+
+" backup
+" set backup
+" set backupext=.bak
+" set backupdir=/tmp/vim/vimbak/
+
+"create undo file
+if has('persistent_undo')
+  set undolevels=1000         " How many undos
+  set undoreload=10000        " number of lines to save for undo
+  set undofile                " So is persistent undo ...
+  set undodir=/tmp/vim/vimundo/
+endif
+
+set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
+" 突出显示当前行等
+set cursorcolumn
+set cursorline          " 突出显示当前行
+" hi CursorLine term=underline cterm=underline gui=underline
+highlight CursorLine  term=underline  guibg=#fffcd0  cterm=underline
+
+set mouse=a                 " Automatically enable mouse usage
+
+
+set title
+
+" Remember info about open buffers on close"
+set viminfo^=%
+
+" For regular expressions turn magic on
+set magic
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+" set whichwrap+=<,>,h,l
+
+"==========================================
+" Display Settings 展示/排版等界面格式设置
+"==========================================
+"
+"显示当前的行号列号：
+set ruler
+""在状态栏显示正在输入的命令
+set showcmd
+" 左下角显示当前vim模式
+set showmode
+
+" 在上下移动光标时，光标的上方或下方至少会保留显示的行数
+set scrolloff=7
+
+" set winwidth=79
+
+" 命令行（在状态行下）的高度，默认为1，这里是2
+set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
+" Always show the status line - use 2 lines for the status bar
+" set laststatus=2
+
+"显示行号：
+set number
+" 取消换行。
+"set nowrap
+
+" 括号配对情况,跳转并高亮一下匹配的括号
+set showmatch
+" How many tenths of a second to blink when matching brackets
+set matchtime=2
+
+
+"设置文内智能搜索提示
+" 高亮search命中的文本。
+set hlsearch
+" 打开增量搜索模式,随着键入即时搜索
+set incsearch
+" 搜索时忽略大小写
+set ignorecase
+" 有一个或以上大写字母时仍大小写敏感
+set smartcase     " ignore case if search pattern is all lowercase, case-sensitive otherwise
+
+" 代码折叠
+set foldenable
+" 折叠方法
+" manual    手工折叠
+" indent    使用缩进表示折叠
+" expr      使用表达式定义折叠
+" syntax    使用语法定义折叠
+" diff      对没有更改的文本进行折叠
+" marker    使用标记进行折叠, 默认标记是 {{{ 和 }}}
+
+" 基于缩进或语法进行代码折叠
+"set foldmethod=indent
+set foldmethod=syntax
+set foldlevel=99
+" 启动 vim 时关闭折叠代码
+set nofoldenable
+
+" 缩进配置
+set smartindent   " Smart indent
+set autoindent    " 打开自动缩进
+
+" tab相关变更
+set tabstop=4     " 设置Tab键的宽度        [等同的空格个数]
+set shiftwidth=4  " 每一次缩进对应的空格数
+set softtabstop=4 " 按退格键时可以一次删掉 4 个空格
+set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 4 个空格
+set expandtab     " 将Tab自动转化成空格    [需要输入真正的Tab键时，使用 Ctrl+V + Tab]
+" set shiftround    " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
+
+" A buffer becomes hidden when it is abandoned
+set hidden
+set wildmode=list:longest
+set ttyfast
+
+" 00x增减数字时使用十进制
+set nrformats=
+
+" 相对行号      行号变成相对，可以用 nj  nk   进行跳转 5j   5k 上下跳5行
+set relativenumber number
+au FocusLost * :set norelativenumber number
+au FocusGained * :set relativenumber
+" 插入模式下用绝对行号, 普通模式下用相对
+autocmd InsertEnter * :set norelativenumber number
+autocmd InsertLeave * :set relativenumber
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber number
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <leader>nt :call NumberToggle()<cr>
+
+"==========================================
+" FileEncode Settings 文件编码,格式
+"==========================================
+" 设置新文件的编码为 UTF-8
+set encoding=utf-8
+" 自动判断编码时，依次尝试以下编码：
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set helplang=cn
+"set langmenu=zh_CN.UTF-8
+"set enc=2byte-gb18030
+" 下面这句只影响普通模式 (非图形界面) 下的 Vim。
+set termencoding=utf-8
+
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
+
+" 如遇Unicode值大于255的文本，不必等到空格再折行。
+set formatoptions+=m
+" 合并两行中文时，不在中间加空格：
+set formatoptions+=B
+
+
+" keyboard shortcuts
+" inoremap jj <ESC>
+
+" commit when saved
+" autocmd BufWritePost,FileWritePost * silent !git commit -am 'autocommit by vim' --amend>/dev/null
+" autocmd BufWritePost,FileWritePost * silent !git add . && git commit -m 'autocommit by vim'>/dev/null
+autocmd BufWritePost,FileWritePost * silent !git add . && git commit -m 'autocommit by vim' --amend>/dev/null
+
+" 插入模式下按aa,自动将光标移到行末
+inoremap aa <ESC>A
+
+inoremap jj <ESC>jA
+inoremap ;w <ESC>:w<CR>
+inoremap j; <ESC>A;
+
+nmap <leader>hl :let @/ = ""<CR>
+autocmd! bufwritepost .vimrc source % " vimrc文件修改之后自动加载。 linux。
+
+"<leader>s 进行保存（前面已经将leader映射为,)
+" func! SaveFile()
+"     exec "w"
+" endfunc
+" map  <leader>s :call SaveFile()<CR>
+" imap <leader>s <ESC>:call SaveFile()<CR>
+" vmap <leader>s <ESC>:call SaveFile()<CR>
+map <leader>w :w<CR>
+"imap <leader>s <ESC>:w<CR>
+" vmap <leader>s <ESC>:w<CR>
+map <leader>wq :wq<CR>
+map <leader>q :q<CR>
+map <leader>qq :q!<CR>
+
+noremap <leader>w *#
+" imap <leader>sq <ESC>:wq<CR>
+" vmap <leader>sq <ESC>:wq<CR>
+
+" 关闭方向键, 强迫自己用 hjkl
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
+"Treat long lines as break lines (useful when moving around in them)
+"se swap之后，同物理行上线直接跳
+nnoremap k gk
+nnoremap gk k
+nnoremap j gj
+nnoremap gj j
+
+" F1 - F6 设置
+" F1 废弃这个键,防止调出系统帮助
+" F2 行号开关，用于鼠标复制代码用
+" F3 显示可打印字符开关
+" F4 换行开关
+" F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
+" F6 语法开关，关闭语法可以加快大文件的展示
+" F8 代码格式化
+
+" I can type :help on my own, thanks.  Protect your fat fingers from the evils of <F1>
+noremap <F1> <Esc>"
+
+""为方便复制，用<F2>开启/关闭行号显示:
+function! HideNumber()
+  if(&relativenumber == &number)
+    set relativenumber! number!
+  elseif(&number)
+    set number!
+  else
+    set relativenumber!
+  endif
+  set number?
+endfunc
+nnoremap <F2> :call HideNumber()<CR>
+nnoremap <F3> :set list! list?<CR>
+nnoremap <F4> :set wrap! wrap?<CR>
+              "set paste
+" set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
+                                "    paste mode, where you can paste mass data
+                                "    that won't be autoindented
+
+" disbale paste mode when leaving insert mode
+au InsertLeave * set nopaste
+
+nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+
+" ex mode commands made easy 用于快速进入命令行
+" nnoremap ; :
+
+" 命令行模式增强，ctrl - a到行首， -e 到行尾
+cnoremap <C-j> <t_kd>
+cnoremap <C-k> <t_ku>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+
+
+" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+" 进入搜索Use sane regexes"
+" nnoremap <space> /\v
+" vnoremap <space> /\v
+" nnoremap // /
+" vnoremap // /
+
+"Keep search pattern at the center of the screen."
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+nnoremap <silent> g* g*zz
+
+" switch # *
+nnoremap # *
+nnoremap * #
+
+nnoremap [b :bprevious<cr>
+nnoremap ]b :bnext<cr>
+
+" cnoremap th :tabfirst<cr>
+" cnoremap tl :tablast<cr>
+" cnoremap tj :tabnext<cr>
+" cnoremap tk :tabprev<cr>
+" cnoremap tc :tabclose<cr>
+" cnoremap tn :tabnew<cr>
+
+" normal模式下切换到确切的tab
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
+
+"Reselect visual block after indent/outdent.调整缩进后自动选中，方便再次操作
+vnoremap < <gv
+vnoremap > >gv
+
+" select block
+nnoremap <leader>v V`}
+
+" 滚动Speed up scrolling of the viewport slightly
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
+" Swap implementations of ` and ' jump to markers
+" By default, ' jumps to the marked line, ` jumps to the marked line and
+" column, so swap them
+nnoremap ' `
+nnoremap ` '
+
+" nmap j jzz
+" nmap k kzz
+
+" 定义快捷键到行首和行尾
+nmap lb 0
+nmap le $
+" 设置快捷键将选中文本块复制至系统剪贴板
+vnoremap <Leader>y "+y
+" 设置快捷键将系统剪贴板内容粘贴至 vim
+nmap <Leader>p "+p
+" remap U to <C-r> for easier redo
+nnoremap U <C-r>
+" inoremap <c-u> <c-g>u<c-u>
+" inoremap <c-w> <c-g>u<c-w>
+
+set iskeyword+=-
+
+"为不同的文件类型设置不同的空格数替换TAB
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ai
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sw=4
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ts=4
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sts=4
+autocmd FileType javascript,html,css,xml set ai
+autocmd FileType javascript,html,css,xml set sw=2
+autocmd FileType javascript,html,css,xml set ts=2
+autocmd FileType javascript,html,css,xml set sts=2
+
+map <F8> :call JsBeautify()<cr>
+" or
+"RangeJsxBeautify
+autocmd FileType javascript noremap <buffer>  <F8> :call JsxBeautify()<cr>
+autocmd FileType jsx noremap <buffer>  <F8> :call JsxBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <F8> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <F8> :call CSSBeautify()<cr>
+autocmd FileType javascript vnoremap <buffer>  <F8> :call RangeJsxBeautify()<cr>
+autocmd FileType jsx vnoremap <buffer>  <F8> :call RangeJsxBeautify()<cr>
+autocmd FileType html vnoremap <buffer> <F8> :call RangeHtmlBeautify()<cr>
+autocmd FileType css vnoremap <buffer> <F8> :call RangeCSSBeautify()<cr>
+
+" vim-json显示双引号
+setlocal conceallevel=0
+let g:vim_json_syntax_conceal = 0
+" let g:indentLine_noConcealCursor=""
+
+" nnoremap <leader>c :CtrlP<CR>
+" nnoremap <leader>C :CtrlPClearCache<CR>:CtrlP<CR>
+
+" tern-for-vim
+" 鼠标停留在方法内时显示参数提示
+autocmd FileType javascript.js.jsx omnifunc=tern#Complete
+let g:tern_show_argument_hints = 'on_hold'
+" 补全时显示函数类型定义
+let g:tern_show_signature_in_pum = 1
+let tern#is_show_argument_hints_enabled = 1
+let g:stop_autocomplete=0
+" 跳转到浏览器
+nnoremap <leader>tb :TernDocBrowse<cr>
+" 显示变量定义
+nnoremap <leader>tt :TernType<cr>
+" 跳转到定义处
+nnoremap <leader>tf :TernDef<cr>
+" 显示文档
+nnoremap <leader>td :TernDoc<cr>
+" 预览窗口显示定义处代码
+nnoremap <leader>tp :TernDefPreview<cr>
+" 变量重命名
+nnoremap <leader>tr :TernRename<cr>
+" location 列表显示全部引用行
+nnoremap <leader>ts :TernRefs<cr>
+
+"dash
+nmap <leader>da :!open dash://def:<cword><cr><cr>
+nmap <leader>dj :!open dash://jq:<cword><cr><cr>
+nmap <leader>dy :!open dash://Y:<cword><cr><cr>
+nmap <leader>djs :!open dash://js:<cword><cr><cr>
+
+" easymotion
+" nmap <Leader>s <Plug>(easymotion-sn)
+" xmap <Leader>s <Plug>(easymotion-sn)
+" omap <Leader>z <Plug>(easymotion-sn)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+map <Leader><Leader>l <Plug>(easymotion-lineforward)
+map <Leader><Leader>j <Plug>(easymotion-j)
+map <Leader><Leader>k <Plug>(easymotion-k)
+map <Leader><Leader>h <Plug>(easymotion-linebackward)
+" Use uppercase target labels and type as a lower case
+let g:EasyMotion_use_upper = 1
+ " type `l` and match `l`&`L`
+let g:EasyMotion_smartcase = 1
+" Smartsign (type `3` and match `3`&`#`)
+let g:EasyMotion_use_smartsign_us = 1
+" keep cursor column when JK motion
+let g:EasyMotion_startofline = 0
+" nmap \ ,
+
+" 在 vim 启动的时候默认开启 NERDTree（autocmd 可以缩写为 au）
+autocmd VimEnter * NERDTree
+
+" vim-instant-markdown
+" let g:instant_markdown_slow = 1
+let g:instant_markdown_autostart = 0
+set shell=bash\ -i
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['html', 'javascript', 'css', 'bash=sh']
+
+" let g:ag_working_path_mode="r"
+" clear highlight after search and typed esc
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='luna'
+let g:airline#extensions#tabline#buffer_nr_show = 0
+let g:airline_extensions = []
+
+let g:Lf_CacheDiretory = '~/git-sankuai/mefe'
+
+set clipboard+=unnamed

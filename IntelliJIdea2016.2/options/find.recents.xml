@@ -1,0 +1,46 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>hasJ</find>
+      <find>211.144.5.45</find>
+      <find>updateSettlementWithdrawMark</find>
+      <find>updateInfo</find>
+      <find>getByUserMobiles</find>
+      <find>idcard_verify_status</find>
+      <find>getPolicysByManufacturerUserId</find>
+      <find>conf</find>
+      <find>getOrder(</find>
+      <find>USERINFO_SIGNED_MESSAGE</find>
+      <find>USERINFO_NOAGENTINFO_MESSAGE</find>
+      <find>暂</find>
+      <find>args</find>
+      <find>buildSqlSessionFactory</find>
+      <find>build</find>
+      <find>mybatis</find>
+      <find>myba</find>
+      <find>enumBasePackage</find>
+      <find>customHandlerPackageList</find>
+      <find>register</find>
+      <find>signin</find>
+      <find>orderList</find>
+      <find>ye</find>
+      <find>info</find>
+      <find>suishoubao_android</find>
+      <find>400</find>
+      <find>ParameterError</find>
+      <find>dozer</find>
+      <find>userInfoConService</find>
+      <find>updateNickname</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Integer</replace>
+      <replace>channel</replace>
+      <replace>notes</replace>
+      <replace>pers.wxl</replace>
+      <replace>notes-</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$USER_HOME$/shuidi/api/shuidi</dir>
+    </dirStrings>
+  </component>
+</application>

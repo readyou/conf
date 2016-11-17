@@ -1,0 +1,8 @@
+snippet k-mid "koa middleware function" i
+function $1($2) {
+	return async function $1(ctx, next) {
+		$3
+		await next();
+	};
+}
+endsnippet

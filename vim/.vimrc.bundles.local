@@ -1,0 +1,24 @@
+Bundle 'jiangmiao/auto-pairs'
+Plugin 'marijnh/tern_for_vim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'EasyGrep'
+Bundle 'Yggdroot/LeaderF'
+Plugin 'easymotion/vim-easymotion'
+Bundle 'mattn/emmet-vim'
+" Bundle "justinj/vim-react-snippets"
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+Plugin 'Yggdroot/indentLine'
+Bundle "kshenoy/vim-signature"
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
+Plugin 'elzr/vim-json'
+Plugin 'tpope/vim-markdown'
+Plugin 'mxw/vim-jsx'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Bundle 'ap/vim-css-color'
+

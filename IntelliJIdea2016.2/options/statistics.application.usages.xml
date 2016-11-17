@@ -1,0 +1,219 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="run-configuration-type-temp">
+      <project id="shuidi-parent" values="Application" collectionTime="1474241599391" />
+    </group>
+    <group name="jdbc-datasource">
+      <project id="shuidi" values="MySQL/5.7.10" collectionTime="1463406823061" />
+    </group>
+    <group name="language-level">
+      <project id="qsc" values="JDK_1_8" collectionTime="1467704005413" />
+      <project id="shuidi-admin-task" values="JDK_1_5,JDK_1_6" collectionTime="1464048268136" />
+      <project id="meplatform" values="JDK_1_8,JDK_1_7,JDK_1_5" collectionTime="1467982167443" />
+      <project id="qry" values="JDK_1_6" collectionTime="1464831013589" />
+      <project id="shuidi-task" values="JDK_1_8,JDK_1_5" collectionTime="1464054630995" />
+      <project id="test" values="JDK_1_5,JDK_1_8" collectionTime="1461318362266" />
+      <project id="positive-thinking" values="JDK_1_8,JDK_1_5" collectionTime="1461030143665" />
+      <project id="task" values="JDK_1_5,JDK_1_8" collectionTime="1464054628332" />
+      <project id="learned-optimism" values="JDK_1_5,JDK_1_6" collectionTime="1462702334202" />
+      <project id="shiro-example" values="JDK_1_5,JDK_1_8" collectionTime="1463410542771" />
+      <project id="springboot" values="JDK_1_8" collectionTime="1461125374619" />
+      <project id="shuidi-parent" values="JDK_1_7,JDK_1_6,JDK_1_8" collectionTime="1474241599458" />
+      <project id="shuidi" values="JDK_1_5,JDK_1_6" collectionTime="1463406823058" />
+      <project id="shuidi-message" values="JDK_1_8" collectionTime="1474240645737" />
+      <project id="spring-boot-learn" values="JDK_1_8" collectionTime="1461318801798" />
+      <project id="api" values="JDK_1_5,JDK_1_6" collectionTime="1468259733792" />
+      <project id="api1" values="JDK_1_6,JDK_1_5" collectionTime="1471791273409" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="qsc" values="DEFAULT" collectionTime="1467704005414" />
+      <project id="shuidi-admin-task" values="DEFAULT" collectionTime="1464048268138" />
+      <project id="meplatform" values="DEFAULT" collectionTime="1467982167447" />
+      <project id="qry" values="DEFAULT" collectionTime="1464831013592" />
+      <project id="shuidi-task" values="DEFAULT" collectionTime="1464054630995" />
+      <project id="test" values="DEFAULT" collectionTime="1461318362270" />
+      <project id="positive-thinking" values="DEFAULT" collectionTime="1461030143665" />
+      <project id="task" values="DEFAULT" collectionTime="1464054628333" />
+      <project id="learned-optimism" values="DEFAULT" collectionTime="1462702334202" />
+      <project id="shiro-example" values="DEFAULT" collectionTime="1463410542773" />
+      <project id="springboot" values="DEFAULT" collectionTime="1461125374619" />
+      <project id="shuidi-parent" values="DEFAULT" collectionTime="1474241599462" />
+      <project id="shuidi" values="DEFAULT" collectionTime="1463406823061" />
+      <project id="shuidi-message" values="DEFAULT" collectionTime="1474240645866" />
+      <project id="spring-boot-learn" values="DEFAULT" collectionTime="1461318801798" />
+      <project id="api" values="DEFAULT" collectionTime="1468259733800" />
+      <project id="api1" values="DEFAULT" collectionTime="1471791273567" />
+    </group>
+    <group name="vcs">
+      <project id="meplatform" values="Git" collectionTime="1467982167377" />
+      <project id="api" values="Git" collectionTime="1468259733716" />
+      <project id="shuidi-task" values="Git" collectionTime="1464054630962" />
+      <project id="api1" values="Git" collectionTime="1471791273196" />
+      <project id="shuidi" values="Git" collectionTime="1463406823010" />
+      <project id="shuidi-parent" values="Git" collectionTime="1474241599391" />
+      <project id="qsc" values="Git" collectionTime="1467704005380" />
+      <project id="shuidi-admin-task" values="Git" collectionTime="1464048268108" />
+      <project id="shuidi-message" values="Git" collectionTime="1474240645506" />
+      <project id="learned-optimism" values="Git" collectionTime="1462702334184" />
+      <project id="task" values="Git" collectionTime="1464054628290" />
+      <project id="shiro-example" values="Git" collectionTime="1463410542724" />
+    </group>
+    <group name="run-configuration-type">
+      <project id="api" values="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory.Local" collectionTime="1468259733717" />
+      <project id="api1" values="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory.Local" collectionTime="1471791273198" />
+      <project id="shuidi" values="JUnit,#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory.Local" collectionTime="1463406823010" />
+      <project id="shuidi-parent" values="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory.Local" collectionTime="1474241599391" />
+      <project id="shuidi-message" values="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory.Local" collectionTime="1474240645508" />
+      <project id="spring-boot-learn" values="MavenRunConfiguration" collectionTime="1461318801769" />
+      <project id="positive-thinking" values="Application" collectionTime="1461030143640" />
+    </group>
+    <group name="spring">
+      <project id="positive-thinking" values="fileset_configFiles5,fileset_xmlContext,xmlNS_www.springframework.org/schema/aop,xmlNS_www.springframework.org/schema/context" collectionTime="1461030143665" />
+      <project id="shuidi-admin-task" values="xmlNS_mybatis.org/schema/mybatis-spring,xmlNS_www.springframework.org/schema/context,xmlNS_www.springframework.org/schema/aop,xmlNS_www.springframework.org/schema/tx,fileset_xmlContext,xmlNS_www.springframework.org/schema/context,fileset_configFiles5" collectionTime="1464048268140" />
+      <project id="shuidi" values="fileset_xmlContext,xmlNS_www.springframework.org/schema/mvc,xmlNS_www.springframework.org/schema/context,fileset_configFiles5" collectionTime="1463406823062" />
+    </group>
+    <group name="jdbc-driver">
+      <project id="shuidi" values="com.mysql.jdbc.Driver" collectionTime="1463406823061" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="qsc" values="Project,Project" collectionTime="1467704005414" />
+      <project id="shuidi-admin-task" values="Project,Project" collectionTime="1464048268138" />
+      <project id="meplatform" values="Project,Project" collectionTime="1467982167447" />
+      <project id="qry" values="Project,Project" collectionTime="1464831013592" />
+      <project id="shuidi-task" values="Project,Project" collectionTime="1464054630995" />
+      <project id="test" values="Project,Project" collectionTime="1461318362270" />
+      <project id="positive-thinking" values="Project,Project" collectionTime="1461030143665" />
+      <project id="task" values="Project,Project" collectionTime="1464054628333" />
+      <project id="learned-optimism" values="Project,Project" collectionTime="1462702334202" />
+      <project id="shiro-example" values="Project,Project" collectionTime="1463410542773" />
+      <project id="springboot" values="Project,Project" collectionTime="1461125374619" />
+      <project id="shuidi-parent" values="Project,Project" collectionTime="1474241599462" />
+      <project id="shuidi" values="Project,Project" collectionTime="1463406823061" />
+      <project id="shuidi-message" values="Project,Project" collectionTime="1474240645866" />
+      <project id="spring-boot-learn" values="Project,Project" collectionTime="1461318801798" />
+      <project id="api" values="Project,Project" collectionTime="1468259733800" />
+      <project id="api1" values="Project,Project" collectionTime="1471791273567" />
+    </group>
+    <group name="frameworks">
+      <project id="test" values="web" collectionTime="1461318362209" />
+      <project id="meplatform" values="web" collectionTime="1467982167377" />
+      <project id="api" values="web" collectionTime="1468259733716" />
+      <project id="springboot" values="web" collectionTime="1461125374582" />
+      <project id="positive-thinking" values="Spring" collectionTime="1461030143640" />
+      <project id="shuidi" values="Spring,web" collectionTime="1463406823010" />
+      <project id="shuidi-parent" values="web" collectionTime="1474241599391" />
+      <project id="api1" values="web" collectionTime="1471791273196" />
+      <project id="shuidi-admin-task" values="Spring" collectionTime="1464048268108" />
+      <project id="shuidi-message" values="web" collectionTime="1474240645507" />
+      <project id="learned-optimism" values="web" collectionTime="1462702334184" />
+      <project id="shiro-example" values="web" collectionTime="1463410542724" />
+    </group>
+    <group name="libraries">
+      <project id="api" values="spring,spring-mvc" collectionTime="1468259733786" />
+      <project id="api1" values="spring-mvc,spring" collectionTime="1471791273402" />
+      <project id="shiro-example" values="spring-mvc,spring" collectionTime="1463410542770" />
+      <project id="shuidi" values="spring-mvc,spring" collectionTime="1463406823057" />
+      <project id="shuidi-parent" values="spring-mvc,spring,BeanValidation" collectionTime="1474241599457" />
+      <project id="positive-thinking" values="spring" collectionTime="1461030143665" />
+      <project id="shuidi-message" values="spring,spring-mvc" collectionTime="1474240645729" />
+      <project id="spring-boot-learn" values="BeanValidation,WebSocket,spring-boot,spring,EJB,spring-mvc" collectionTime="1461318801798" />
+      <project id="learned-optimism" values="spring,spring-mvc" collectionTime="1462702334202" />
+      <project id="meplatform" values="spring-mvc,spring" collectionTime="1467982167442" />
+    </group>
+    <group name="file-type">
+      <project id="qsc" values="UNKNOWN,XML,JAVA,PLAIN_TEXT,IDEA_MODULE" collectionTime="1467704005413" />
+      <project id="shuidi-admin-task" values="IDEA_MODULE,Properties,UNKNOWN,XML,PLAIN_TEXT" collectionTime="1464048268136" />
+      <project id="meplatform" values="UNKNOWN,YAML,SQL,Enforced Plain Text,Native,ARCHIVE,FTL,CSS,Images,JSON,JavaScript,SWF,JSP,JAVA,IDEA_MODULE,HTML,SourceMap,Bash,XML,Properties,PLAIN_TEXT" collectionTime="1467982167426" />
+      <project id="qry" values="JAVA,UNKNOWN" collectionTime="1464831013588" />
+      <project id="shuidi-task" values="IDEA_MODULE,UNKNOWN,Properties,XML,PLAIN_TEXT,JAVA" collectionTime="1464054630995" />
+      <project id="test" values="XML,UNKNOWN,PLAIN_TEXT,IDEA_MODULE" collectionTime="1461318362265" />
+      <project id="positive-thinking" values="UNKNOWN,IDEA_MODULE,XML,PLAIN_TEXT,JAVA" collectionTime="1461030143664" />
+      <project id="task" values="IDEA_MODULE,Properties,PLAIN_TEXT,XML,UNKNOWN" collectionTime="1464054628331" />
+      <project id="learned-optimism" values="PLAIN_TEXT,XML,IDEA_MODULE,UNKNOWN" collectionTime="1462702334202" />
+      <project id="shiro-example" values="JAVA,SQL,JSON,XML,IDEA_MODULE,Images,PLAIN_TEXT,Properties,JavaScript,UNKNOWN,JSP,HTML,CSS" collectionTime="1463410542762" />
+      <project id="springboot" values="XML,IDEA_MODULE,Groovy,UNKNOWN,JSP,PLAIN_TEXT" collectionTime="1461125374619" />
+      <project id="shuidi-parent" values="JSON,Markdown,JAVA,SQL,JSP,JavaScript,PLAIN_TEXT,UNKNOWN,Images,CSS,Git file,Properties,Bash,XML,SWF,IDEA_MODULE,YAML,HTML" collectionTime="1474241599456" />
+      <project id="shuidi" values="SQL,C++,JSP,Manifest,PATCH,IDEA_MODULE,Images,XHTML,ESLint,SourceMap,PLAIN_TEXT,Native,JSCS,DATASOURCE_STORAGE,JSHint,JAVA,IDL,JavaScript,JSPX,ARCHIVE,TypeScript,HTML,XML,Properties,JSON,YAML,Groovy,UNKNOWN,CLASS,CSS,CoffeeScript,Less" collectionTime="1463406823055" />
+      <project id="shuidi-message" values="Properties,Git file,Markdown,JAVA,IDEA_MODULE,JSP,UNKNOWN,VTL,XML,PLAIN_TEXT" collectionTime="1474240645688" />
+      <project id="spring-boot-learn" values="JAVA,UNKNOWN,IDEA_MODULE,PLAIN_TEXT,XML" collectionTime="1461318801798" />
+      <project id="api" values="PLAIN_TEXT,Properties,IDEA_MODULE,Markdown,Bash,JSP,CSS,XML,UNKNOWN,SQL,JAVA,JavaScript,YAML" collectionTime="1468259733782" />
+      <project id="api1" values="JAVA,Git file,IDEA_MODULE,Bash,UNKNOWN,XML,CSS,Properties,Markdown,JavaScript,JSP,PLAIN_TEXT,SQL" collectionTime="1471791273368" />
+    </group>
+    <group name="module type">
+      <project id="qsc" values="JAVA_MODULE" collectionTime="1467704005380" />
+      <project id="shuidi-admin-task" values="JAVA_MODULE" collectionTime="1464048268108" />
+      <project id="meplatform" values="JAVA_MODULE" collectionTime="1467982167377" />
+      <project id="qry" values="JAVA_MODULE" collectionTime="1464831013584" />
+      <project id="shuidi-task" values="JAVA_MODULE" collectionTime="1464054630963" />
+      <project id="test" values="JAVA_MODULE" collectionTime="1461318362209" />
+      <project id="positive-thinking" values="JAVA_MODULE" collectionTime="1461030143640" />
+      <project id="task" values="JAVA_MODULE" collectionTime="1464054628290" />
+      <project id="learned-optimism" values="JAVA_MODULE" collectionTime="1462702334184" />
+      <project id="shiro-example" values="JAVA_MODULE" collectionTime="1463410542724" />
+      <project id="springboot" values="JAVA_MODULE" collectionTime="1461125374582" />
+      <project id="shuidi-parent" values="JAVA_MODULE" collectionTime="1474241599391" />
+      <project id="shuidi" values="JAVA_MODULE" collectionTime="1463406823010" />
+      <project id="shuidi-message" values="JAVA_MODULE" collectionTime="1474240645507" />
+      <project id="spring-boot-learn" values="JAVA_MODULE" collectionTime="1461318801769" />
+      <project id="api" values="JAVA_MODULE" collectionTime="1468259733717" />
+      <project id="api1" values="JAVA_MODULE" collectionTime="1471791273197" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="39" />
+      <entry feature="CreateFile.CreateSpringConfigAction" count="5" />
+      <entry feature="JSDebugConfig.Debug.browser-default.preferredEngine-null.no_mappings" count="3" />
+      <entry feature="execute.#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory.Debug" count="1416" />
+      <entry feature="execute.#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory.Run" count="410" />
+      <entry feature="execute.Application.Debug" count="59" />
+      <entry feature="execute.Application.Run" count="175" />
+      <entry feature="execute.JUnit.Debug" count="6" />
+      <entry feature="execute.JUnit.Run" count="56" />
+      <entry feature="execute.JavascriptDebugType.Debug" count="3" />
+      <entry feature="execute.MavenRunConfiguration.Debug" count="2" />
+      <entry feature="execute.MavenRunConfiguration.Run" count="85" />
+      <entry feature="execute.Remote.Debug" count="5" />
+      <entry feature="execute.ResinConfigurationType.Debug" count="253" />
+      <entry feature="execute.ResinConfigurationType.Run" count="5" />
+      <entry feature="ide.help.top" count="1" />
+      <entry feature="ide.settings.Application&#10;Servers" count="12" />
+      <entry feature="ide.settings.CSS" count="1" />
+      <entry feature="ide.settings.Code_Completion" count="4" />
+      <entry feature="ide.settings.Code_Style" count="2" />
+      <entry feature="ide.settings.Colors_&amp;_Fonts" count="7" />
+      <entry feature="ide.settings.Editor_Tabs" count="1" />
+      <entry feature="ide.settings.File_Encodings" count="6" />
+      <entry feature="ide.settings.File_and_Code_Templates" count="38" />
+      <entry feature="ide.settings.Font" count="9" />
+      <entry feature="ide.settings.General" count="1" />
+      <entry feature="ide.settings.Importing" count="1" />
+      <entry feature="ide.settings.Inspections" count="8" />
+      <entry feature="ide.settings.Keymap" count="1" />
+      <entry feature="ide.settings.Live_Templates" count="55" />
+      <entry feature="ide.settings.Maven" count="4" />
+      <entry feature="ide.settings.Plugins" count="1" />
+      <entry feature="ide.settings.Project_Structure" count="16" />
+      <entry feature="ide.settings.Resin_Server" count="2" />
+      <entry feature="ide.settings.System_Settings" count="7" />
+      <entry feature="ide.settings.Tomcat_Server" count="3" />
+      <entry feature="ide.settings.Version_Control" count="1" />
+      <entry feature="ideaapp.started" count="79" />
+      <entry feature="spring.SpringConfigurationCheck.FileCount.java" count="40" />
+      <entry feature="spring.SpringConfigurationCheck.FileCount.xml" count="1743" />
+      <entry feature="spring.SpringFacetInspection.AddFacetFix" count="2" />
+      <entry feature="spring.SpringFacetInspection.ConfigureFileSetFix" count="1" />
+      <entry feature="terminal.mac" count="79" />
+      <entry feature="tips.of.the.day.next" count="229" />
+      <entry feature="tips.of.the.day.prev" count="2" />
+      <entry feature="uml.ShowDiagram.DIFF.popup" count="1" />
+      <entry feature="uml.ShowDiagram.JAVA" count="3" />
+      <entry feature="uml.ShowDiagram.JAVA.popup" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.CreateNewProject" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.Documentation" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="6" />
+      <entry feature="welcome.screen.WelcomeScreen.Update" count="1" />
+    </counts>
+  </component>
+</application>

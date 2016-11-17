@@ -1,0 +1,79 @@
+<application>
+  <component name="AppserversManager">
+    <ServerDK NAME="Tomcat 2">
+      <option name="SOURCE_INTEGRATION_NAME" value="Tomcat Server" />
+      <DATA>
+        <option name="CATALINA_HOME" value="$USER_HOME$/shuidi/apache-tomcat-2" />
+        <option name="CATALINA_BASE" value="" />
+      </DATA>
+    </ServerDK>
+    <ServerDK NAME="Tomcat 1">
+      <option name="SOURCE_INTEGRATION_NAME" value="Tomcat Server" />
+      <DATA>
+        <option name="CATALINA_HOME" value="$USER_HOME$/shuidi/apache-tomcat-8.0.33" />
+        <option name="CATALINA_BASE" value="" />
+      </DATA>
+    </ServerDK>
+    <ServerDK NAME="Tomcat 3">
+      <option name="SOURCE_INTEGRATION_NAME" value="Tomcat Server" />
+      <DATA>
+        <option name="CATALINA_HOME" value="$USER_HOME$/shuidi/apache-tomcat-3" />
+        <option name="CATALINA_BASE" value="" />
+      </DATA>
+    </ServerDK>
+    <ServerDK NAME="resin-pro1">
+      <option name="SOURCE_INTEGRATION_NAME" value="Resin Server" />
+      <DATA>
+        <option name="RESIN_HOME" value="$USER_HOME$/Downloads/application_sources/resin/resin-pro1" />
+        <option name="INCLUDE_ALL_JARS" value="true" />
+        <option name="RESIN_CONF" value="$USER_HOME$/Downloads/application_sources/resin/resin-pro1/conf/resin.xml" />
+      </DATA>
+    </ServerDK>
+    <ServerDK NAME="resin-pro">
+      <option name="SOURCE_INTEGRATION_NAME" value="Resin Server" />
+      <DATA>
+        <option name="RESIN_HOME" value="$USER_HOME$/Downloads/application_sources/resin/resin-pro" />
+        <option name="INCLUDE_ALL_JARS" value="false" />
+        <option name="RESIN_CONF" value="$USER_HOME$/Downloads/application_sources/resin/resin-pro/conf/resin.xml" />
+      </DATA>
+    </ServerDK>
+    <LibraryTable>
+      <library name="resin-pro">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/application_sources/resin/resin-pro/lib/javaee-16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+      <library name="resin-pro1">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES />
+      </library>
+      <library name="Tomcat 1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/shuidi/apache-tomcat-8.0.33/lib/jsp-api.jar!/" />
+          <root url="jar://$USER_HOME$/shuidi/apache-tomcat-8.0.33/lib/servlet-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+      <library name="Tomcat 2">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/shuidi/apache-tomcat-8.0.33/lib/jsp-api.jar!/" />
+          <root url="jar://$USER_HOME$/shuidi/apache-tomcat-8.0.33/lib/servlet-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+      <library name="Tomcat 3">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/shuidi/apache-tomcat-3/lib/jsp-api.jar!/" />
+          <root url="jar://$USER_HOME$/shuidi/apache-tomcat-3/lib/servlet-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </LibraryTable>
+  </component>
+</application>

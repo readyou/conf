@@ -1,0 +1,223 @@
+snippet i-fj "Immutable.fromJS" i
+Immutable.fromJS(${1:json}, ${2:(value, key) => {$3}});
+endsnippet
+
+snippet i-is "Immutable.is" i
+Immutable.is($1}, $2)$0
+endsnippet
+
+snippet i-L "Immutable.List()" i
+${1:Immutable.}List($2)$0
+endsnippet
+
+snippet i-lil "Immutable.List.isList" i
+${:Immutable.}List.isList($2)$0
+endsnippet
+
+snippet i-lof "Immutable.List.of" i
+${1:Immutable.}List.of($2)$0
+endsnippet
+
+snippet i-mim "Immutable.Map.isMap" i
+${:Immutable.}Map.isMap($2)$0
+endsnippet
+
+snippet i-mof "Immutable.Map.of" i
+${1:Immutable.}Map.of($2)$0
+endsnippet
+
+snippet i-om "Immutable.OrderedMap" i
+${1:Immutable.}OrderedMap($2);$0
+endsnippet
+
+snippet i-omi "Immutable.OrderedMap.isOrderedMap" i
+${1:Immutable.}OrderedMap.isOrderedMap($2);$0
+endsnippet
+
+snippet i-s "Immutable.Set" i
+${1:Immutable.}Set($2);$0
+endsnippet
+
+snippet i-sis "Immutable.Set.isSet" i
+${1:Immutable.}Set.isSet($2);$0
+endsnippet
+
+snippet i-sof "Immutable.Set.of" i
+${1:Immutable.}Set.of($2);$0
+endsnippet
+
+snippet i-sfk "Immutable.Set.fromKeys" i
+${1:Immutable.}Set.fromKeys($2);$0
+endsnippet
+
+snippet i-os "Immutable.OrderedSet" i
+${1:Immutable.}OrderedSet($2);$0
+endsnippet
+
+snippet i-osis "Immutable.OrderedSet.isSet" i
+${1:Immutable.}OrderedSet.isSet($2);$0
+endsnippet
+
+snippet i-osof "Immutable.OrderedSet.of" i
+${1:Immutable.}OrderedSet.of($2);$0
+endsnippet
+
+snippet i-osfk "Immutable.OrderedSet.fromKeys" i
+${1:Immutable.}OrderedSet.fromKeys($2);$0
+endsnippet
+
+snippet i-st "Immutable.Stack" i
+${1:Immutable.}Stack($2);$0
+endsnippet
+
+snippet i-stis "Immutable.Stack.isStack" i
+${1:Immutable.}Stack.isStack($2);$0
+endsnippet
+
+snippet i-stof "Immutable.Stack.of" i
+${1:Immutable.}Stack.of($2);$0
+endsnippet
+
+snippet i-stpa "Immutable.Stack.pushAll" i
+pushAll($1);$0
+endsnippet
+
+snippet i-stusa "Immutable.Stack.unshiftAll" i
+unshiftAll($1);$0
+endsnippet
+
+snippet i-stpk "Immutable.Stack.peek" i
+peek($1);$0
+endsnippet
+
+snippet i-sad "Immutable.Set.add" i
+add($1);$0
+endsnippet
+
+snippet i-su "Immutable.Set.union" i
+union($1);$0
+endsnippet
+
+snippet i-si "Immutable.Set.intersect" i
+intersect($1);$0
+endsnippet
+
+snippet i-ss "Immutable.Set.subtract" i
+subtract($1);$0
+endsnippet
+
+snippet i-fset "Immutable set" i
+set($2, $3)$0
+endsnippet
+
+snippet i-fd "Immutable delete" i
+delete($2)$0
+endsnippet
+
+snippet i-fi "Immutable insert" i
+insert($2, $3)$0
+endsnippet
+
+snippet i-fc "Immutable clear" i
+clear();
+$0
+endsnippet
+
+snippet i-fps "Immutable push" i
+push($2);$0
+endsnippet
+
+snippet i-fpo "Immutable pop" i
+pop();$0
+endsnippet
+
+snippet i-fus "Immutable unshift" i
+unshift($2);$0
+endsnippet
+
+snippet i-fs "Immutable shift" i
+shift();$0
+endsnippet
+
+snippet i-fu "Immutable update" i
+update($2);$0
+endsnippet
+
+snippet i-fm "Immutable merge" i
+merge($2);$0
+endsnippet
+
+snippet i-fmw "Immutable mergeWith" i
+mergeWith(${2:(previous, next, key) => {$3}}, $4);$0
+endsnippet
+
+snippet i-fmd "Immutable mergeDeep" i
+mergeDeep($2);$0
+endsnippet
+
+snippet i-fmdw "Immutable mergeDeepWith" i
+mergeDeepWith(${2:(previous, next, key) => {$3}}, $4);$0
+endsnippet
+
+snippet i-fss "Immutable setSize" i
+setSize($2);$0
+endsnippet
+
+snippet i-fsi "Immutable setIn" i
+setIn($2, $3);$0
+endsnippet
+
+snippet i-fdi "Immutable deleteIn" i
+deleteIn($2, $3);$0
+endsnippet
+
+snippet i-fui "Immutable updateIn" i
+updateIn($2, $3);$0
+endsnippet
+
+snippet i-fmi "Immutable mergeIn" i
+mergeIn($2, $3);$0
+endsnippet
+
+snippet i-fmdi "Immutable mergeDeepIn" i
+mergeDeepIn($2, $3);$0
+endsnippet
+
+snippet i-rg "Immutable.Range(start?: number, end?: number, step?: number): Seq.Indexed<number>" i
+${1:Immutable.}Range($2);$0
+endsnippet
+
+snippet i-rp "Immutable.Repeat<T>(value: T, times?: number): Seq.Indexed<T>" i
+${1:Immutable.}Repeat($2);$0
+endsnippet
+
+snippet i-rc "Immutable.Record" i
+${1:Immutable.}Record($2);$0
+endsnippet
+
+
+
+
+
+
+
+
+snippet i-isit "Immutable.Iterable.isIterable" i
+${1:Immutable.}Iterable.isIterable($2)$0
+endsnippet
+
+snippet i-isk "Immutable.Iterable.isKeyed" i
+${1:Immutable.}Iterable.isKeyed($2)$0
+endsnippet
+
+snippet i-isin "Immutable.Iterable.isIndexed" i
+${1:Immutable.}Iterable.isIndexed($2)$0
+endsnippet
+
+snippet i-isas "Immutable.Iterable.isAssociative" i
+${1:Immutable.}Iterable.isAssociative($2)$0
+endsnippet
+
+snippet i-iso "Immutable.Iterable.isOrdered" i
+${1:Immutable.}Iterable.isOrdered($2)$0
+endsnippet

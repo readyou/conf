@@ -1,0 +1,459 @@
+snippet lock "Description" i
+// 上锁，防止多次提交
+if (this['lock$1']) {
+	return;
+} else {
+	this['lock$1'] = true;
+}
+endsnippet
+
+snippet lockp "lock a post request" i
+// 上锁，防止多次提交
+if (this['lock$1']) {
+	return;
+} else {
+	this['lock$1'] = true;
+}
+this.postJson({
+	url: $2,
+	data: $3,
+	success: (data) => {
+		$4
+	},
+	complete: () => {
+		this['lock$1'] = false;
+	}
+});
+endsnippet
+
+snippet post "postJson" i
+this.postJson({
+	url: $1,
+	data: $2,
+	success: (data) => {
+		$4
+	},
+});
+endsnippet
+
+snippet expd "export default" i
+export default $1;$0
+endsnippet
+
+snippet ifr "import React from 'react'" b
+import React${1} from 'react';
+$0
+endsnippet
+
+snippet ifrd "import ReactDOM from 'react-dom'" b
+import ReactDOM${1} from 'react-dom';
+$0
+endsnippet
+
+snippet expcc "export default clsss" b
+import React from 'react';
+
+class ${1} extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	${3}
+	render() {
+		return (
+			${2}
+		)
+	}
+}
+export default $1;
+${0}
+endsnippet
+
+snippet ctl "{controller: {url: 'url', controller: async function}}"
+{
+	url: '${1}',
+	controller: async function(${2}) {
+		${3}
+	}
+}${0}
+endsnippet
+snippet mexp "module.exports = " b
+module.exports = ${0}
+endsnippet
+
+snippet expka "module.exports koa async function" b
+module.exports = async function (next) {
+	${1}
+};
+${0}
+endsnippet
+
+snippet ipfr "import className from..." b
+import ${1} from '${2}';${0}
+endsnippet
+
+snippet cs "React.addons.classSet" b
+var cx = React.addons.classSet;
+endsnippet
+
+snippet cdm0 "component did mount:" b
+componentDidMount: function() {
+	${1}
+},$0
+endsnippet
+
+snippet cdm "component did mount" b
+componentDidMount() {
+	${1}
+}
+${0}
+endsnippet
+
+snippet cdup0 "component did update:" b
+componentDidUpdate: function(prevProps, prevState) {
+	${1}
+},$0
+endsnippet
+
+snippet cdup "component did update" b
+componentDidUpdate(prevProps, prevState) {
+	${1}
+}
+${0}
+endsnippet
+
+snippet cwm0 "component will mount:" b
+componentWillMount: function() {
+	${1}
+},$0
+endsnippet
+
+snippet cwm "component will mount" b
+componentWillMount()) {
+	${1}
+}
+$0
+endsnippet
+
+snippet cwr0 "component will receive props:" b
+componentWillReceiveProps: function(nextProps) {
+	${1}
+},$0
+endsnippet
+
+snippet cwr "component will receive props" b
+componentWillReceiveProps(nextProps) {
+	${1}
+}
+$0
+endsnippet
+
+snippet cwun0 "component will unmount:" b
+componentWillUnmount: function() {
+	${1}
+},$0
+endsnippet
+
+snippet cwun "component will unmount" b
+componentWillUnmount() {
+	${1}
+}
+$0
+endsnippet
+
+snippet cwu0 "component will update:" b
+componentWillUpdate: function(nextProps, nextState) {
+	${1}
+},$0
+endsnippet
+
+snippet cwu "component will update" b
+componentWillUpdate(nextProps, nextState) {
+	${1}
+}
+$0
+endsnippet
+
+snippet cx
+cx({
+	${1}: ${2}
+});
+endsnippet
+
+snippet fup
+forceUpdate(${1:callback});
+endsnippet
+
+snippet gdp0 "get default props:" b
+getDefaultProps: function() {
+	return {
+		${1}
+	};
+},$0
+endsnippet
+
+snippet gdp "get default props" b
+getDefaultProps() {
+	return {
+		${1}
+	};
+}
+$0
+endsnippet
+
+snippet gis0 "get initial state:" b
+getInitialState: function() {
+	return {
+		${1}: ${2}
+	};
+},$0
+endsnippet
+
+snippet gis "get initial state" b
+getInitialState() {
+	return {
+		${1}: ${2}
+	};
+}
+$0
+endsnippet
+
+snippet ism "is mounted"
+isMounted()
+endsnippet
+
+snippet jsx "define jsx dom" b
+/**
+ * @jsx React.DOM
+ */
+
+var React = require('react');
+}
+var ${2:ClassName} = React.createClass({
+
+render: function() {
+	return (
+		${VISUAL}$4
+	);
+}
+
+});
+$0
+${3:module.exports = $2;}
+endsnippet
+
+snippet spt "static propTypes" b
+static propTypes = {
+	${1}: React.PropTypes.${2:string}
+};
+endsnippet
+
+snippet pt0 "propTypes" b
+propTypes: {
+	${1}: React.PropTypes.${2:string}
+},
+endsnippet
+
+
+snippet rpt "React.PropTypes." b
+React.PropTypes.$0
+endsnippet
+
+snippet rpta "React.PropTypes.array" i
+React.PropTypes.array
+endsnippet
+
+snippet rptb "React.PropTypes.bool" i
+React.PropTypes.bool
+endsnippet
+
+snippet rptf "React.PropTypes.func" i
+React.PropTypes.func
+endsnippet
+
+snippet rptn "React.PropTypes.number" i
+React.PropTypes.number
+endsnippet
+
+snippet rptnd "React.PropTypes.node" i
+React.PropTypes.node
+endsnippet
+
+snippet rpto "React.PropTypes.object" i
+React.PropTypes.object
+endsnippet
+
+snippet rpts "React.PropTypes.string" i
+React.PropTypes.string
+endsnippet
+
+snippet rptiof "React.PropTypes.instanceOf" i
+React.PropTypes.instanceOf
+endsnippet
+
+snippet rptoof "React.PropTypes.oneOf" i
+React.PropTypes.oneOf
+endsnippet
+
+snippet rptoot "React.PropTypes.oneOfType" i
+React.PropTypes.oneOfType
+endsnippet
+
+snippet rptao "React.PropTypes.arrayOf" i
+React.PropTypes.arrayOf
+endsnippet
+
+snippet rptobo "React.PropTypes.objectOf" i
+React.PropTypes.objectOf
+endsnippet
+
+snippet rptsh "React.PropTypes.shape" i
+React.PropTypes.shape
+endsnippet
+
+snippet isr "isRequired" i
+isRequired
+endsnippet
+
+snippet rcc "create es6 react class/component"
+class ${1} extends React.Component {
+
+	constructor(props) {
+		super(props);
+${2:		this.state = {${3}};}
+	}
+
+	render() {
+		return (
+			${4}
+		);
+	}
+}
+
+export default $1;
+$0
+endsnippet
+
+snippet rcc0 "create class/component"
+var ${1:ClassName} = React.createClass({
+
+	render: function() {
+		return (
+			${VISUAL}$2
+		);
+	}
+
+});
+$0
+endsnippet
+
+snippet ren0 "render:"
+render: function() {
+	return (
+		${1:<div />}
+	);
+}$0
+endsnippet
+
+snippet ren "render"
+render() {
+	return (
+		${1:<div />}
+	);
+}
+$0
+endsnippet
+
+snippet sst "set state:" i
+this.setState({
+	${1}: ${2}
+});$0
+endsnippet
+
+
+snippet scu "should component update"
+shouldComponentUpdate(nextProps, nextState) {
+	${1}
+}
+$0
+endsnippet
+
+snippet props "get property" i
+this.props.${1}
+endsnippet
+
+snippet state "get state" i
+this.state.${1}
+endsnippet
+
+snippet trp
+this.transferPropsTo(${VISUAL}$0);
+endsnippet
+
+snippet use "use strict" b
+'use stirct';
+$0
+endsnippet
+
+snippet cp "react custom prop: function(props, propName, componentName)" b
+${1}: function(props, propName, componentName) {
+	if (${2}) {
+		return new Error('${3}');
+	}
+}$0
+endsnippet
+
+snippet spt "static propTypes" b
+static propTypes = {
+	$1
+}
+$0
+endsnippet
+
+snippet rqen "require.ensure" i
+require.ensure([], function (require) {
+	$2
+});
+$0
+endsnippet
+
+snippet rrgc "react-router Route.getComponent" i
+getComponent(location, callback) {
+	require.ensure([], function (require) {
+		callback(null, require($2));
+	});
+}
+$0
+endsnippet
+
+snippet rrgcs "react-router Route.getComponents" i
+getComponents(location, callback) {
+	require.ensure([], function (require) {
+		callback(null, {$2: require($3)});
+	});
+}
+$0
+endsnippet
+
+snippet rb "React constructor bind" i
+this.$1 = this.$1.bind(this);
+endsnippet
+
+snippet clog "console.log" i
+console.log($1);$0
+endsnippet
+
+snippet expf "export from" i
+export $1 from '$2';$0
+endsnippet
+
+snippet dlog "debug log" i
+if (__DEV__) {
+	console.log($1);
+}
+$0
+endsnippet
+
+snippet rdang "react dangerouslySetInnerHTML" i
+dangerouslySetInnerHTML={${1:{__html: $2}}}$0
+endsnippet
+

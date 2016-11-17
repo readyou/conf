@@ -1,0 +1,123 @@
+<templateSet group="wxl">
+  <template name="rmj" value="@RequestMapping(path = &quot;$PATH$&quot;, method = RequestMethod.POST, produces = &quot;application/json;charset=UTF-8&quot;)&#10;@ResponseBody&#10;public Object $METHOD$($END$) {&#10;}" description="@RequestMapping(path = &quot;$PATH$&quot;, method = RequestMethod.POST, produces = &quot;application/json;charset=UTF-8&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="aw" value="@Autowired$END$" description="@Autowired" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lg" value="private static final Logger LOGGER = LoggerFactory.getLogger($CLASS$.class);&#10;" description="public static final Logger logger = LoggerFactory.getLogger(xxx.class);" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="x-pom" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;project&#10;&#9;xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&#10;&#9;xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#10;&#10;&lt;/project&gt;" description="pom xml header" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="x-mb" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&#10;&lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;&#10;        &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;&gt;&#10;&lt;mapper namespace=&quot;com.shuidi.suishoubao.dao&quot;&gt;&#10;&#9;&lt;sql id=&quot;tableName&quot;&gt;&#10;        $TABLE_NAME$&#10;    &lt;/sql&gt;&#10;&#9;&lt;sql id=&quot;selectFields&quot;&gt;&#10;        $END$&#10;    &lt;/sql&gt;&#10;&lt;/mapper&gt;" description="mybatis config xml header" toReformat="true" toShortenFQNames="true">
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="exa" value="List&lt;$START$&gt; selectByExample(BasicExample basicExample);$END$" description="selectByExample" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="xexa" value="    &lt;select id=&quot;selectByExample&quot; resultMap=&quot;BaseResultMap&quot; parameterType=&quot;com.shuidihuzhu.util.admin.BasicExample&quot;&gt;&#10;        select&#10;        &lt;include refid=&quot;Base_Column_List&quot;/&gt;&#10;        from $START$&#10;        &lt;include refid=&quot;com.shuidihuzhu.dao.admin.ModifyForbidden.Example_Where_Clause&quot;/&gt;&#10;    &lt;/select&gt;&#10;" description="xml selectByExample" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="nmap" value="Map&lt;String, Object&gt; $START$ = Maps.newHashMap();$END$" description="new Map" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="nlmap" value="List&lt;Map&lt;String, Object&gt;&gt; $START$ = Lists.newArrayList();$END$" description="new List&lt;Map&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sbe" value="&lt;select id=&quot;selectByExample&quot; parameterType=&quot;com.shuidihuzhu.util.admin.BasicExample&quot;&gt;&#10;    select&#10;    &lt;if test=&quot;distinct&quot;&gt;&#10;        distinct&#10;    &lt;/if&gt;&#10;    &lt;include refid=&quot;SELECT_FIELDS&quot;/&gt;&#10;    from&#10;    &lt;include refid=&quot;TABLE&quot;/&gt;&#10;    &lt;if test=&quot;_parameter != null&quot;&gt;&#10;        &lt;include refid=&quot;com.shuidihuzhu.dao.admin.ModifyForbidden.Example_Where_Clause&quot;/&gt;&#10;    &lt;/if&gt;&#10;&lt;/select&gt;&#10;" description="select by example" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="csbe" value="public Object $START$(@RequestParam(name = &quot;searchInfo&quot;, required = false, defaultValue = &quot;{}&quot;) String searchInfo,&#10;                      @RequestParam(name = &quot;pagination&quot;, required = false, defaultValue = &quot;{}&quot;) String pagination) {&#10;    JSONObject searchObj = JSON.parseObject(searchInfo);&#10;    PageUtil pageUtil = PageUtil.parseJsonString(pagination);&#10;    BasicExample basicExample = new BasicExample();&#10;    if (null != searchObj) {&#10;        basicExample.or()&#10;                .andEqualTo(&quot;valid&quot;, searchObj.getInteger(&quot;valid&quot;))&#10;                .andLike(&quot;activityName&quot;, searchObj.getString(&quot;activityName&quot;), BasicExample.LikeType.WITH_BOTH_WILDCARD)&#10;    }&#10;    basicExample.setOrderByClause(&quot;create_time desc&quot;);&#10;&#10;    Map&lt;String, Object&gt; result = Maps.newHashMap();&#10;    List&lt;ActivityRecord&gt; activityRecordList = activityRecordBiz.selectByExample(basicExample, pageUtil.getPageNo(), pageUtil.getPageSize());&#10;    result.put(&quot;data&quot;, activityRecordList);&#10;    result.put(&quot;pagination&quot;, PageUtil.transform2PageMap(activityRecordList));&#10;    return ResponseUtil.makeSuccess(result);&#10;}" description="controller select by example" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tsh" value="@RunWith(SpringJUnit4ClassRunner.class)&#10;@ContextConfiguration(locations = {&quot;/ctx-app.xml&quot;,&#10;                                   &quot;/ctx-biz.xml&quot;})" description="add test annotations: @RunWith, @ContextConfiguration" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tsf" value="@Test&#10;public void test$START$() {&#10;&#9;$END$&#10;}&#10;" description="add test function" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="eoth" value="handler=&quot;org.apache.ibatis.type.EnumOrdinalTypeHandler&quot; " description="EnumOrdinalTypeHandler" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="eth" value="handler=&quot;org.apache.ibatis.type.EnumTypeHandler&quot; " description="EnumTypeHandler" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sc" value="/**&#10; * 根据条件对象进行查询&#10; * @param basicCondition&#10; */&#10;public List&lt;$PO_NAME$&gt; selectConditional(BasicCondition basicCondition);&#10;" description="selectConditional" toReformat="false" toShortenFQNames="true">
+    <variable name="PO_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ev" value="$ENUM_NAME$($ENUM_VALUE$, &quot;$DESC$&quot;),$END$" description="enum value" toReformat="false" toShortenFQNames="true">
+    <variable name="ENUM_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENUM_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="2dt" value="private Date dateCreated;&#10;private Date lastModified;" description="添加dateCreated和lastModified" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="x-sel" value="&lt;select id=&quot;$SELECT_ID$&quot; resultType=&quot;com.shuidi.suishoubao.po&quot;&gt;&#10;    SELECT &#10;    &lt;include refid=&quot;selectFields&quot;/&gt;&#10;    FROM&#10;       &lt;include refid=&quot;tableName&quot;/&gt;&#10;    WHERE 1 = 1 $END$&#10;&lt;/select&gt;&#10;" description="mapper.xml select" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECT_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="x-ict" value="&lt;include refid=&quot;tableName&quot;/&gt;" description="include refid=&quot;tableName&quot;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="tse" value="throw new ServiceRuntimeException($ERROR$);$END$" description="throw service exception" toReformat="false" toShortenFQNames="true">
+    <variable name="ERROR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,124 @@
+snippet mtb "import mt-button" b
+import MtButton from 'mtf.element/mt-button';
+$0
+endsnippet
+
+snippet mtbi "import mt-bill" b
+import NodeBill from 'mtf.complex/node-bill';
+$0
+endsnippet
+
+snippet mtgp "import mt-node-gp" b
+import NodeGP from 'mtf.complex/node-gp';
+$0
+endsnippet
+
+snippet mtc "import mt-checkbox" b
+import MtCheckbox from 'mtf.element/mt-checkbox';
+$0
+endsnippet
+
+snippet mtcg "import mt-checkbox-group" b
+import MtCheckboxGroup from 'mtf.element/mt-checkbox-group';
+$0
+endsnippet
+
+snippet mtd "import mt-dialog" b
+import MtDialog from 'mtf.element/mt-dialog';
+$0
+endsnippet
+
+snippet mtg "import mt-grid" b
+import MtGrid from 'mtf.element/mt-grid';
+$0
+endsnippet
+
+snippet mtic "import mt-icon" b
+import MtIcon from 'mtf.element/mt-icon';
+$0
+endsnippet
+
+snippet mti "import mt-input" b
+import MtInput from 'mtf.element/mt-input';
+$0
+endsnippet
+
+snippet mtid "import mt-input-date" b
+import MtInputDate from 'mtf.element/mt-input/date';
+$0
+endsnippet
+
+snippet mtir "import mt-input-ref" b
+import MtInputRef from 'mtf.element/mt-input/ref';
+$0
+endsnippet
+
+snippet mtil "import mt-input-list" b
+import MtInputList from 'mtf.element/mt-input/list';
+$0
+endsnippet
+
+snippet mtim "import mt-input-multilist" b
+import MtInputMultiList from 'mtf.element/mt-input/multiList';
+$0
+endsnippet
+
+snippet mtl "import mt-label" b
+import MtLabel from 'mtf.element/mt-label';
+$0
+endsnippet
+
+snippet mtlo "import mt-loading" b
+import MtLoading from 'mtf.element/mt-loading';
+$0
+endsnippet
+
+snippet mtp "import mt-pagination" b
+import MtPagination from 'mtf.element/mt-pagination';
+$0
+endsnippet
+
+snippet mtr "import mt-radio" b
+import MtRadio from 'mtf.element/mt-radio';
+$0
+endsnippet
+
+snippet mtrg "import mt-radio-group" b
+import MtRadioGroup from 'mtf.element/mt-radio-group';
+$0
+endsnippet
+
+snippet mtta "import mt-tabs" b
+import MtTabs from 'mtf.element/mt-tabs';
+$0
+endsnippet
+
+snippet mttip "import mt-tip" b
+import MtTip from 'mtf.element/mt-tip';
+$0
+endsnippet
+
+snippet mtto "import mt-toaster" b
+import MtToaster from 'mtf.element/mt-toaster';
+$0
+endsnippet
+
+snippet mtu "import mt-uploader" b
+import MtUploader from 'mtf.element/mt-uploader';
+$0
+endsnippet
+
+snippet mtw "import mt-workspace" b
+import MtWorkspace from 'mtf.element/mt-workspace';
+$0
+endsnippet
+
+snippet mt_ "import mtf.common/js/lodash" b
+import _ from 'mtf.common/js/lodash';
+$0
+endsnippet
+
+snippet mtfc "import fetchCompose from '../util/fetchCompose'" b
+import fetchCompose from '../../util/fetchCompose';
+$0
+endsnippet
